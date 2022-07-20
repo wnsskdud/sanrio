@@ -759,7 +759,7 @@ main>.btn:hover{
 /* 컨텐츠4 */
 .cntWrap:nth-last-child(4){
     background-color: #e7c8e8;
-    margin-top: min(2rem,80px);
+    /* margin-top: min(2rem,80px); */
 }
 .cnt04>header>h2{
     color: #fff;
