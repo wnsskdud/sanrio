@@ -1,0 +1,537 @@
+/* @font-face {
+    font-family: xeicon;
+    src: url('./fonts/xeicon.ttf');
+} */
+
+html{
+    font-size: 3vw;
+}
+body{
+    position: relative;
+    font-size: 0.7vw;
+    font-family: xeicon;
+    transition: all 0.3s;
+    overflow-y: auto;
+}
+body.menuOpen{
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+body.menuOpen::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(188,149,206,.65);
+    z-index: 9;
+}
+/* 헤더 */
+.hdrWrap{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+.hdrWrap>header{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: min(0.5rem,20px) 0px;
+}
+.hdrWrap .nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: min(3.5em,35px);
+    line-height: min(1.5rem,60px);
+    color: #fff;
+    width: calc(100% / 12 * 1.6);
+}
+.hdrWrap .nav>li{
+    width: calc(100% / 1.6);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hdrWrap .nav>li:nth-child(1){
+    background-image: url('../images/menuicon.png');
+}
+.hdrWrap .nav>li:nth-child(2){
+    background-image: url('../images/menuicon2.png');
+}
+.hdrWrap .image{
+    width: calc(100% / 12 * 2);
+    height: min(1.5rem,60px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/sanrio_logo.png');
+}
+.hdrWrap .image>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* 메뉴 */
+.mnWrap{
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(26px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s;
+}
+ul.menu{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: min(6rem,240px) 0 min(5rem,200px);
+}
+ul.menu>li:hover{
+    background-color: #a07fbc;
+}
+ul.menu>li{
+    text-align: center;
+    width: calc(100% / 12 * 7.5);
+    border-radius: 80px;
+    margin: 0 auto;
+    font-size: min(4.8em,48px);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    line-height: min(1.25rem,50px);
+    padding: min(0.35rem,15px) 0px;
+}
+ul.menu>li span{
+    display: block;
+    font-size: min(1.58em,18px);
+    line-height: min(0.5rem,20px);
+    padding-top: min(0.25rem,10px);
+}
+/* 메인 */
+.mainWrap{
+    padding-top: min(3rem,120px);
+    padding-bottom: min(2rem,80px);
+    background-position: 0;
+    background-size: 50px;
+    background-repeat: repeat;
+    background-image: url('../images/main_visual_bg.jpg');
+    position: relative;
+}
+main{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+main>h2{
+    width: calc(100% / 12 * 5.8);
+    height: min(2rem,80px);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/sanrio_sub2_title.png');
+    text-indent: -999px;
+}
+main>.imageBox{
+    height: min(13rem,520px);
+    /* background-color: #ecf4ff; */
+    border: 5px solid #8a5cb3;
+    border-radius: 5px;
+    background-position: 0;
+    background-size: 58 px;
+    background-repeat: repeat;
+    background-image: url('../images/sanrio_sub01_pt.jpg');
+}
+main>.imageBox>.image{
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/sanrio_sub02_img.png');
+}
+.mainWrap>.view{
+    background-color: #8a5cb3;
+    height: min(1rem,40px);
+    width: 100%;
+    overflow: hidden;
+    background-position: 0 50%;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-image: url('../images/sanriokorea2.png');
+    animation-duration: 200s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-name: view;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@keyframes view {
+    0%{
+        background-position: 0 50%;
+    }
+    100%{
+        background-position: 10000px 50%;
+    }
+}
+/* 컨텐츠 */
+.cntWrap{
+    height: min(39rem,1560px);
+    padding-top: min(2rem,80px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/sanrio_sub02_bg2.jpg');
+}
+.content{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+header>.image{
+    height: min(8rem,320px);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/sanrio_sub2tit.png');
+}
+section{
+    margin-top: min(6rem,240px);
+}
+article>.images{
+    width: calc(100% / 12 * 4);
+    height: min(12rem,480px);
+    position: relative;
+    margin: 0 auto;
+}
+article>.images>.image{
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+article>.images>.image.show{
+    height: min(12rem,480px);
+}
+article>.images>.image.i1{
+    background-image: url('../images/sanrio_sub2.i1.png');
+}
+article>.images>.image.i2{
+    background-image: url('../images/sanrio_sub2.i2.png');
+}
+article>.images>.image.i3{
+    background-image: url('../images/sanrio_sub2.i3.png');
+}
+article>.images>.image.i4{
+    background-image: url('../images/sanrio_sub2.i4.png');
+}
+article>.images>.image.i5{
+    background-image: url('../images/sanrio_sub2.i5.png');
+}
+article>.images>.image.i6{
+    background-image: url('../images/sanrio_sub2.i6.png');
+}
+article>.texts{
+    margin-top: min(4rem,160px);
+}
+article>.texts>p{
+    font-size: min(2.6em,26px);
+    text-align: center;
+    color: #333;
+    line-height: min(1rem,40px);
+}
+article>.texts>.btn:hover{
+    background-color: #8957a1;
+    color: #fff;
+}
+article>.texts>.btn{
+    font-size: min(1.9em,19px);
+    line-height: min(1rem,40px);
+    text-align: center;
+    font-weight: 700;
+    width: calc(100% / 12 * 2.5);
+    background-color: #fff;
+    color: #aa89bd;
+    border: 3px solid #8957a1;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: min(1rem,40px);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.content .lightBoxWrap{
+    background-color: rgba(255,255,255,0.5);  
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+}
+.content .lightBox{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 0;
+    overflow: hidden;
+}
+.content .lightBox.lb1{
+    /* height: 100%; */
+}
+.content .box{
+    width: calc(100% / 12 * 5);
+    margin: 0 auto;
+    margin-top: min(2rem,80px);
+    border-radius: 20px;
+    height: 82vh;
+    min-height: 770px;
+    position: relative;
+    overflow: hidden;
+}
+.content .lb1 .boxFront{
+    background-color: #ea423f;
+}
+.content .lb2 .boxFront{
+    background-color: #bf93d2;
+}
+.content .lb3 .boxFront{
+    background-color: #fdb40f;
+}
+.content .lb4 .boxFront{
+    background-color: #92dea0;
+}
+.content .lb5 .boxFront{
+    background-color: #f2a9c7;
+}
+.content .lb6 .boxFront{
+    background-color: #cadff2;
+}
+.boxFront{
+    border-radius: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: all 1s;
+    padding-bottom: min(0.5rem,20px);
+    overflow: hidden;
+}
+.boxFront>.image{
+    height: min(16.25rem,650px);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.boxFront>.btn{
+    width: calc(100% / 5 * 4);
+    line-height: min(2rem,80px);
+    border-radius: 40px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: min(3.2em,32px);
+    margin-top: min(0.5rem,20px);
+    cursor: pointer;
+}
+.lb1 .boxFront>.btn{
+    background-color: #144fb3;
+    color: #ffde00;
+}
+.lb2 .boxFront>.btn{
+    background-color: #231917;
+    color: #ff8cb5;
+}
+.lb3 .boxFront>.btn{
+    background-color: #82272c;
+    color: #fff;
+}
+.lb4 .boxFront>.btn{
+    background-color: #543d35;
+    color: #fff;
+}
+.lb5 .boxFront>.btn{
+    background-color: #fcf59a;
+    color: #5f2426;
+}
+.lb6 .boxFront>.btn{
+    background-color: #5088c9;
+    color: #fff;
+}
+.boxFront>.image.i1{
+    background-image: url('../images/sanrio_sub2_lb1f.png');
+}
+.boxFront>.image.i2{
+    background-image: url('../images/sanrio_sub2_lb2f.png');
+}
+.boxFront>.image.i3{
+    background-image: url('../images/sanrio_sub2_lb3f.png');
+}
+.boxFront>.image.i4{
+    background-image: url('../images/sanrio_sub2_lb4f.png');
+}
+.boxFront>.image.i5{
+    background-image: url('../images/sanrio_sub2_lb5f.png');
+}
+.boxFront>.image.i6{
+    background-image: url('../images/sanrio_sub2_lb6f.png');
+}
+.boxBack{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: transform 1s;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.boxBack>.btn{
+    font-size: min(2.5em,25px);
+    color: #333;
+    position: absolute;
+    top: min(0.5rem,20px);
+    right: 20px;
+    cursor: pointer;
+}
+.boxBack>.image{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: min(19.25rem,770px);
+    width: 100%;
+}
+.boxBack>.image.i1{
+    background-image: url('../images/sanrio_sub2_lb1b.png');
+}
+.boxBack>.image.i2{
+    background-image: url('../images/sanrio_sub2_lb2b.png');
+}
+.boxBack>.image.i3{
+    background-image: url('../images/sanrio_sub2_lb3b.png');
+}
+.boxBack>.image.i4{
+    background-image: url('../images/sanrio_sub2_lb4b.png');
+}
+.boxBack>.image.i5{
+    background-image: url('../images/sanrio_sub2_lb5b.png');
+}
+.boxBack>.image.i6{
+    background-image: url('../images/sanrio_sub2_lb6b.png');
+}
+
+/* 풋터 */
+.ftrWrap{
+    background-color: #dcdcdc;
+}
+footer{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: min(1rem,40px);
+}
+footer>.image{
+    width: calc(100% / 12 * 4);
+    height: min(11rem,440px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../images/sanrio_ftr.png');
+}
+footer>.texts{
+    width: calc(100% / 12 * 7);
+    margin-top: min(2rem,80px);
+    font-size: min(1.6em,16px);
+    line-height: min(1rem,40px);
+}
+footer>.texts .sns{
+    width: calc(100% / 7 * 2);
+    display: flex;
+    justify-content: space-between;
+}
+footer>.texts .sns>.icon{
+    width: calc(100% / 3);
+    height: min(1rem,40px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+footer>.texts .sns>.icon:nth-child(1){
+    background-image: url('../images/facebook.png');
+}
+footer>.texts .sns>.icon:nth-child(2){
+    background-image: url('../images/instagram.png');
+}
+footer>.texts .sns>.icon:nth-child(3){
+    background-image: url('../images/youtube.png');
+}
+footer>.texts .sns>.icon>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+footer>.texts .sns>.icon>span{
+    display: none;
+}
+footer>.texts>.infoBtm{
+    margin-top: min(0.5rem,20px);
+}
+footer>.texts ul{
+    display: flex;
+}
+footer>.texts ul>li::after{
+    content: '|';
+    display: inline-block;
+    margin: 0px 5px;
+    color: #666;
+}
+footer>.texts ul>li:nth-last-child(1):after{
+    display: none;
+}
+
+
+
+
+
+.top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: min(2rem,80px);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../images/sanrio_top.png');
+}
+.top>span{
+    display: none;
+}

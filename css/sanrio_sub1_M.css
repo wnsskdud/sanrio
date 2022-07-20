@@ -1,0 +1,106 @@
+.hdrWrap .image{
+    width: calc(100% / 4);
+    height: 40px;
+}
+.hdrWrap .nav{
+    width: calc(100% / 4);
+    font-size: 25px;
+    line-height: 40px;
+}
+ul.menu{
+    padding: 300px 0;
+}
+ul.menu>li{
+    width: 100%;
+    font-size: 26px;
+    line-height: 30px;
+    padding: 10px 0px;
+}
+ul.menu>li span{
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+.mainWrap{
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+main>h2{
+    width: 100%;
+    height: 50px;
+}
+main>.imageBox{
+    height: 220px;
+    border: 3px solid #8a5cb3;
+}
+.mainWrap>.view{
+    height: 40px;
+}
+.cnt01>header>h2{
+    font-size: 24px;
+    line-height: 40px;
+}
+.cnt01>header>h5{
+    font-size: 12px;
+    line-height: 20px;
+}
+.cnt01>section{
+    height: 1080px;
+}
+
+.cnt01 article{
+    width: calc(100% / 2);
+    height: calc(100% / 6);
+    padding: 0px;
+}
+.cnt01 .image{
+    height: 120px;
+}
+.cnt01 .imageBack{
+    height: 120px;
+}
+.cnt01 .imageBack::after{
+    height: 40px;
+    line-height: 40px;
+    bottom: -35px;
+}
+footer{
+    padding-top: 40px;
+}
+footer > .image{
+    width: calc(100% / 4 * 2);
+    height: 200px;
+}
+footer > .texts{
+    width: calc(100% / 4 * 2);
+    margin-top: 120px;
+    font-size: 10px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+footer>.texts .sns{
+    width: calc(100% / 2 * 1.5);
+}
+footer>.texts .sns>.icon{
+    height: 30px;
+}
+footer>.texts>.infoBtm{
+    margin-top: 0;
+}
+footer .infoBtm>ul:nth-child(1){
+    display: none;
+}
+footer .infoBtm>ul>li:nth-child(2){
+    display: none;
+}
+footer>.texts ul>li::after{
+    display: none;
+}
+footer .infoBtm>.info{
+    display: none;
+}
+.top{
+    height: 60px;
+}
+
+

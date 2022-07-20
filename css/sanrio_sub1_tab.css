@@ -1,0 +1,81 @@
+html{
+    font-size: 5vw;
+}
+body{
+    position: relative;
+    font-size: 1.2vw;
+    font-family: xeicon;
+}
+.hdrWrap>header{
+    width: 90%;
+    max-width: 700px;
+}
+.hdrWrap .image{
+    width: calc(100% / 8 * 2);
+}
+.hdrWrap .nav{
+    width: calc(100% / 8 * 1.7);;
+}
+.hdrWrap .nav>li{
+    width: calc(100% / 1.7);
+}
+ul.menu>li{
+    width: calc(100% / 8 * 6.5);
+}
+main{
+    width: 90%;
+    max-width: 700px;
+}
+main>h2{
+    width: calc(100% / 8 * 7);
+}
+main>.imageBox{
+    background-size: cover;
+    height: min(10rem,400px);
+}
+.content{
+    width: 90%;
+    max-width: 700px;
+}
+.cnt01>header>h5{
+    font-size: min(1.7em,17px);
+}
+.cnt01>section{
+    height: min(26rem,1040px);
+}
+.cnt01 article{
+    width: calc(100% / 3);
+    height: calc(100% / 4);
+    padding: 0px;
+}
+.cnt01 .imageBack::after{
+    bottom: min(-0.75rem,-30px);
+}
+
+footer{
+    width: 90%;
+    max-width: 700px;
+}
+footer > .image{
+    width: calc(100% / 8 * 3);
+    height: min(8rem,320px);
+}
+footer > .texts{
+    width: calc(100% / 8 * 4.5);
+    font-size: min(1.4em,14px);
+}
+footer > .texts .sns{
+    width: calc(100% / 4.5 * 2.2);
+}
+footer>.texts .sns>.icon{
+    height: min(1.25rem,50px);
+}
+footer .infoBtm>ul:nth-child(1)>li:nth-child(1)~li{
+    display: none;
+}
+footer > .texts ul > li::after{
+    display: none;
+}
+footer .info>h4:nth-child(2){
+    display: none;
+}

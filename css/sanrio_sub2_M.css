@@ -1,0 +1,140 @@
+.hdrWrap .image{
+    width: calc(100% / 4);
+    height: 40px;
+}
+.hdrWrap .nav{
+    width: calc(100% / 4);
+    font-size: 25px;
+    line-height: 40px;
+}
+ul.menu{
+    padding: 300px 0;
+}
+ul.menu>li{
+    width: 100%;
+    font-size: 26px;
+    line-height: 30px;
+    padding: 10px 0px;
+}
+ul.menu>li span{
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+.mainWrap{
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+main>h2{
+    width: calc(100% / 4 * 2.9);
+    height: 50px;
+}
+main>.imageBox{
+    height: 220px;
+    border: 3px solid #8a5cb3;
+}
+.mainWrap>.view{
+    height: 40px;
+}
+.cntWrap{
+    height: 840px;
+    padding-top: 40px;
+    background-image: url('../images/sanrio_sub2bgm_2.jpg');
+}
+header>.image{
+    height: 160px;
+}
+section{
+    margin-top: 120px;
+}
+article>.images{
+    height: 300px;
+    width: calc(100% / 4 * 2.3);
+}
+article>.images>.image.show{
+    height: 300px;
+}
+article>.texts{
+    margin-top: 60px;
+}
+article>.texts>p{
+    font-size: 13px;
+    line-height: 20px;
+}
+article>.texts>.btn{
+    width: calc(100% / 4 * 2.2);
+    line-height: 25px;
+    width: max(calc(100% / 4 * 1.5),130px);
+    border: 2px solid rgb(137, 87, 161);
+    font-size: 12px;
+}
+article>.texts>p>span{
+    display: none;
+}
+.content .box{
+    width: calc(100% / 4 * 3.5);
+    height: 550px;
+    min-height: 550px;
+    margin-top: 120px;
+}
+.boxFront{
+    padding-bottom: 20px;
+}
+.boxFront>.image{
+    height: 470px;
+}
+.boxFront>.btn{
+    width: calc(100% / 4 * 3);
+    line-height: 50px;
+    font-size: 18px;
+    margin-top: 0px;
+}
+.boxBack>.image{
+    height: 530px;
+    background-size: cover;
+}
+.boxBack>.btn{
+    font-size: 18px;
+    top: 15px;
+    right: 15px;
+}
+footer{
+    padding-top: 40px;
+}
+footer > .image{
+    width: calc(100% / 4 * 2);
+    height: 200px;
+}
+footer > .texts{
+    width: calc(100% / 4 * 2);
+    margin-top: 120px;
+    font-size: 10px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+footer>.texts .sns{
+    width: calc(100% / 2 * 1.5);
+}
+footer>.texts .sns>.icon{
+    height: 30px;
+}
+footer>.texts>.infoBtm{
+    margin-top: 0;
+}
+footer .infoBtm>ul:nth-child(1){
+    display: none;
+}
+footer .infoBtm>ul>li:nth-child(2){
+    display: none;
+}
+footer>.texts ul>li::after{
+    display: none;
+}
+footer .infoBtm>.info{
+    display: none;
+}
+.top{
+    height: 60px;
+}
+
+

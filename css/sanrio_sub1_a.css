@@ -1,0 +1,338 @@
+@font-face {
+    font-family: xeicon;
+    src: url('./fonts/xeicon.ttf');
+}
+
+html{
+    font-size: 3vw;
+}
+body{
+    position: relative;
+    font-size: 0.7vw;
+    font-family: xeicon;
+    transition: all 0.3s;
+    overflow-y: auto;
+}
+body.menuOpen{
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+body.menuOpen::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(188,149,206,.65);
+    z-index: 9;
+}
+/* 헤더 */
+.hdrWrap{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+.hdrWrap>header{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: min(0.5rem,20px) 0px;
+}
+.hdrWrap .nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: min(3.5em,35px);
+    line-height: min(1.5rem,60px);
+    color: #fff;
+    width: calc(100% / 12 * 1.6);
+}
+.hdrWrap .nav>li{
+    width: calc(100% / 1.6);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hdrWrap .nav>li:nth-child(1){
+    background-image: url('../images/menuicon.png');
+}
+.hdrWrap .nav>li:nth-child(2){
+    background-image: url('../images/menuicon2.png');
+}
+.hdrWrap .image{
+    width: calc(100% / 12 * 2);
+    height: min(1.5rem,60px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/sanrio_logo.png');
+}
+.hdrWrap .image>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* 메뉴 */
+.mnWrap{
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(26px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s;
+}
+ul.menu{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: min(6rem,240px) 0 min(5rem,200px);
+}
+ul.menu>li:hover{
+    background-color: #a07fbc;
+}
+ul.menu>li{
+    text-align: center;
+    width: calc(100% / 12 * 7.5);
+    border-radius: 80px;
+    margin: 0 auto;
+    font-size: min(4.8em,48px);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    line-height: min(1.25rem,50px);
+    padding: min(0.35rem,15px) 0px;
+}
+ul.menu>li span{
+    display: block;
+    font-size: min(1.58em,18px);
+    line-height: min(0.5rem,20px);
+    padding-top: min(0.25rem,10px);
+}
+/* 메인 */
+.mainWrap{
+    padding-top: min(3rem,120px);
+    padding-bottom: min(1rem,40px);
+    background-color: #ccc;
+}
+.main{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.main>h2{
+    font-size: min(6.2em,62px);
+    line-height: min(3rem,120px);
+    font-weight: 700;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0.07em 0.07em rgb(115 62 172 / 70%);;
+    text-transform: uppercase;
+    width: calc(100% / 12 * 8);
+    position: relative;
+}
+.main>h2::after{
+    display: inline-block;
+    content: '';
+    width: calc(100% / 12);
+    height: 40px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/ribbon\ \(1\).png');
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.main>.image{
+    height: min(12rem,480px);
+    background-color: powderblue;
+}
+/* 컨텐츠 */
+.content{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.cnt01>section{
+    width: 100%;
+    height: min(27rem,1080px);
+    background-color: #e7c8e8;
+    margin-top: min(2rem,80px);
+    border-radius: 20px;
+    position: relative;
+}
+.artBox{
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    background-color: #fff4ff;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cnt01 article{
+    width: calc(100% / 4);
+    height: calc(100% / 4);
+    background-image: url('../images/sanrio_sub1_badtz-maru.png');
+}
+.cnt01 .image{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.cnt01 .image.i1{
+    background-image: url('../images/sanrio_sub1_hellokitty.png');
+}
+.cnt01 .image.i2{
+    background-image: url('../images/sanrio_sub1_mymelody.png');
+}
+.cnt01 .image.i3{
+    background-image: url('../images/sanrio_sub1_kuromi.png');
+}
+.cnt01 .image.i4{
+    background-image: url('../images/sanrio_sub1_pompompurin.png');
+}
+.cnt01 .image.i5{
+    background-image: url('../images/sanrio_sub1_sinamo.png');
+}
+.cnt01 .image.i6{
+    background-image: url('../images/sanrio_sub1_star.png');
+}
+.cnt01 .image.i7{
+    background-image: url('../images/sanrio_sub1_pochaco.png');
+}
+.cnt01 .image.i8{
+    background-image: url('../images/sanrio_sub1_keropi.png');
+}
+.cnt01 .image.i9{
+    background-image: url('../images/sanrio_sub1_gudetama.png');
+}
+.cnt01 .image.i10{
+    background-image: url('../images/sanrio_sub1_badtz-maru.png');
+}
+.cnt01 .image.i11{
+    background-image: url('../images/sanrio_sub1_sam.png');
+}
+.cnt01 .image.i12{
+    background-image: url('../images/sanrio_sub1_cogi.png');
+}
+.cnt01 .image.i13{
+    background-image: url('../images/sanrio_sub1_maru.png');
+}
+.cnt01 .image.i14{
+    background-image: url('../images/sanrio_sub1_riru.png');
+}
+.cnt01 .image.i15{
+    background-image: url('../images/sanrio_sub1_ag.png');
+}
+.cnt01 .image.i16{
+    background-image: url('../images/sanrio_sub1_mew.png');
+}
+/* 풋터 */
+.ftrWrap{
+    background-color: #dcdcdc;
+}
+footer{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: min(1rem,40px);
+}
+footer>.image{
+    width: calc(100% / 12 * 4);
+    height: min(11rem,440px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../images/sanrio_ftr.png');
+}
+footer>.texts{
+    width: calc(100% / 12 * 7);
+    margin-top: min(2rem,80px);
+    font-size: min(1.6em,16px);
+    line-height: min(1rem,40px);
+}
+footer>.texts .sns{
+    width: calc(100% / 7 * 2);
+    display: flex;
+    justify-content: space-between;
+}
+footer>.texts .sns>.icon{
+    width: calc(100% / 3);
+    height: min(1rem,40px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+footer>.texts .sns>.icon:nth-child(1){
+    background-image: url('../images/facebook.png');
+}
+footer>.texts .sns>.icon:nth-child(2){
+    background-image: url('../images/instagram.png');
+}
+footer>.texts .sns>.icon:nth-child(3){
+    background-image: url('../images/youtube.png');
+}
+footer>.texts .sns>.icon>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+footer>.texts .sns>.icon>span{
+    display: none;
+}
+footer>.texts>.infoBtm{
+    margin-top: min(0.5rem,20px);
+}
+footer>.texts ul{
+    display: flex;
+}
+footer>.texts ul>li::after{
+    content: '|';
+    display: inline-block;
+    margin: 0px 5px;
+    color: #666;
+}
+footer>.texts ul>li:nth-last-child(1):after{
+    display: none;
+}
+
+
+
+
+
+.top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: min(2rem,80px);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../images/sanrio_top.png');
+}
+.top>span{
+    display: none;
+}

@@ -1,0 +1,171 @@
+.cnt01 .images{
+    width: 100%;
+    height: min(4.25rem,170px);
+    cursor: pointer;
+}
+.cnt01 .image{
+    width: 100%;
+    height: min(4.25rem,170px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: all 1s;
+}
+.cnt01 .imageBack{
+    width: 100%;
+    height: min(4.25rem,170px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: transform 1s;
+}
+.cnt01 .images:hover>.image{
+    transform: rotateY(180deg);
+}
+.cnt01 .images:hover>.imageBack{
+    transform: rotateY(0deg);
+}
+/* .cnt01 .images:hover>.imageBack::after{
+    display: block;
+    height: min(1rem,40px);
+} */
+.cnt01 .imageBack::after{
+    display: block;
+    content: '';
+    width: 90%;
+    height: min(1rem,40px);
+    overflow: hidden;
+    line-height: min(1rem,40px);
+    border-radius: 30px;
+    position: absolute;
+    bottom: min(-1rem,-40px);
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cnt01 .image.i1{
+    background-image: url('../images/sanrio_sub1_hellokitty.png');
+}
+.cnt01 .imageBack.i1{
+    background-image: url('../images/sanrio_sub1_hellokitty_hrt.png');
+}
+.cnt01 .imageBack.i1::after{
+    background-image: url('../images/sanrio_sub1_hellokitty_name.png');
+}
+.cnt01 .image.i2{
+    background-image: url('../images/sanrio_sub1_mymelody.png');
+}
+.cnt01 .imageBack.i2{
+    background-image: url('../images/sanrio_sub1_mymelody_hrt.png');
+}
+.cnt01 .imageBack.i2::after{
+    background-image: url('../images/sanrio_sub1_mymelody_name.png');
+}
+.cnt01 .image.i3{
+    background-image: url('../images/sanrio_sub1_kuromi.png');
+}
+.cnt01 .imageBack.i3{
+    background-image: url('../images/sanrio_sub1_kuromi_hrt.png');
+}
+.cnt01 .imageBack.i3::after{
+    background-image: url('../images/sanrio_sub1_kuromi_name.png');
+}
+.cnt01 .image.i4{
+    background-image: url('../images/sanrio_sub1_pompompurin.png');
+}
+.cnt01 .imageBack.i4{
+    background-image: url('../images/sanrio_sub1_pompompurin_hrt.png');
+}
+.cnt01 .imageBack.i4::after{
+    background-image: url('../images/sanrio_sub1_pompompurin_name.png');
+}
+.cnt01 .image.i5{
+    background-image: url('../images/sanrio_sub1_sinamo.png');
+}
+.cnt01 .imageBack.i5{
+    background-image: url('../images/sanrio_sub1_sinamo_hrt.png');
+}
+.cnt01 .imageBack.i5::after{
+    background-image: url('../images/sanrio_sub1_sinamo_name.png');
+}
+.cnt01 .image.i6{
+    background-image: url('../images/sanrio_sub1_star.png');
+}
+.cnt01 .imageBack.i6{
+    background-image: url('../images/sanrio_sub1_star_hrt.png');
+}
+.cnt01 .imageBack.i6::after{
+    background-image: url('../images/sanrio_sub1_star_name.png');
+}
+.cnt01 .image.i7{
+    background-image: url('../images/sanrio_sub1_pochaco.png');
+}
+.cnt01 .imageBack.i7{
+    background-image: url('../images/sanrio_sub1_pochaco_hrt.png');
+}
+.cnt01 .imageBack.i7::after{
+    background-image: url('../images/sanrio_sub1_pochaco_name.png');
+}
+.cnt01 .image.i8{
+    background-image: url('../images/sanrio_sub1_keropi.png');
+}
+.cnt01 .imageBack.i8{
+    background-image: url('../images/sanrio_sub1_keropi_hrt.png');
+}
+.cnt01 .imageBack.i8::after{
+    background-image: url('../images/sanrio_sub1_keropi_name.png');
+}
+.cnt01 .image.i9{
+    background-image: url('../images/sanrio_sub1_gudetama.png');
+}
+.cnt01 .imageBack.i9{
+    background-image: url('../images/sanrio_sub1_gudetama_hrt.png');
+}
+.cnt01 .imageBack.i9::after{
+    background-image: url('../images/sanrio_sub1_gudetama_name.png');
+}
+.cnt01 .image.i10{
+    background-image: url('../images/sanrio_sub1_badtz-maru.png');
+}
+.cnt01 .imageBack.i10{
+    background-image: url('../images/sanrio_sub1_badtz-maru_hrt.png');
+}
+.cnt01 .imageBack.i10::after{
+    background-image: url('../images/sanrio_sub1_badtz-maru_name.png');
+}
+.cnt01 .image.i11{
+    background-image: url('../images/sanrio_sub1_sam.png');
+}
+.cnt01 .imageBack.i11{
+    background-image: url('../images/sanrio_sub1_sam_hrt.png');
+}
+.cnt01 .imageBack.i11::after{
+    background-image: url('../images/sanrio_sub1_sam_name.png');
+}
+.cnt01 .image.i12{
+    background-image: url('../images/sanrio_sub1_cogi.png');
+}
+.cnt01 .imageBack.i12{
+    background-image: url('../images/sanrio_sub1_cogi_hrt.png');
+}
+.cnt01 .imageBack.i12::after{
+    background-image: url('../images/sanrio_sub1_cogi_name.png');
+}

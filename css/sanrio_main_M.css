@@ -1,0 +1,375 @@
+.hdrWrap .image{
+    width: calc(100% / 4);
+    height: 40px;
+}
+.hdrWrap .nav{
+    width: calc(100% / 4);
+    font-size: 25px;
+    line-height: 40px;
+}
+ul.menu{
+    padding: 300px 0;
+}
+ul.menu>li{
+    width: 100%;
+    font-size: 26px;
+    line-height: 30px;
+    padding: 10px 0px;
+}
+ul.menu>li span{
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+.mainWrap{
+    height: 440px;
+}
+main>.btn{
+    width: calc(100% / 4);
+    height: 50px;
+}
+.cntWrap{
+    padding-top: 80px;
+}
+.content>header>h2{
+    font-size: 24px;
+    line-height: 40px;
+}
+.content>header>h5{
+    font-size: 12px;
+    line-height: 20px;
+}
+.cnt01>header>.btn{
+    width: max(calc(100% / 4 * 1.5),130px);
+    border: 2px solid rgb(137, 87, 161);
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.content>section{
+    margin-top: 40px;
+}
+.cnt01 .artGroup{
+    width: 800%;
+}
+.cnt01 article>.image{
+    height: 320px;
+}
+.cntWrap>.view{
+    height: 40px;
+}
+.cntWrap:nth-child(4){
+    padding-top: 120px;
+    padding-bottom: 80px
+}
+.cnt02 .images{
+    border-radius: 15px;
+}
+.cnt02 .imageGroup{
+    width: 424%;
+}
+.cnt02 .image{
+    height: 240px;
+    border-radius: 15px;
+    min-height: auto;
+}
+.cnt02 .image:nth-child(2){
+    z-index: 7;
+}
+.cnt02 .image:nth-child(2){
+    -webkit-filter: blur(0px);
+}
+.cnt02 .image:nth-child(3){
+    -webkit-filter: blur(1.5px);
+}
+.cnt02 .btn{
+    width: max(calc(100% / 4 * 1.5),130px);
+    border: 2px solid rgb(137, 87, 161);
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 40px;
+}
+.content.cnt03>header>h2{
+    line-height: 25px;
+}
+.cnt03 article>.image{
+    width: 100%;
+    height: 160px;
+}
+.cnt03 article .btn{
+    width: max(calc(100% / 4 * 1.5),130px);
+    border: 2px solid rgb(137, 87, 161);
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 40px;
+}
+.cntWrap:nth-last-child(4){
+    margin-top: 80px;
+}
+.cnt04 section{
+    flex-wrap: wrap;
+}
+.cnt04 article:nth-child(1){
+    margin-top: 0;
+}
+.cnt04 article{
+    width: 100%;
+    margin-top: 40px;
+}
+.cnt04 .image{
+    height: 200px;
+}
+.cnt04 .texts{
+    padding: 15px 20px 20px;
+}
+.cnt04 .texts>h3{
+    font-size: 16px;
+    line-height: 20px;
+}
+.cnt04 .texts>.btn{
+    height: 60px;
+}
+.cnt04>.btn{
+    font-size: 18px;
+    line-height: 80px;
+    width: calc(100% / 4 * 1.5);
+}
+.cnt05 section{
+    flex-wrap: wrap;
+}
+.cnt05 article:nth-child(1){
+    margin-top: 0;
+}
+.cnt05 article{
+    width: 100%;
+    height: 460px;
+    margin-top: 40px;
+}
+.cnt05 article>.images{
+    height: 320px;
+    margin-top: 80px;
+}
+.cnt05 article>.images::before{
+    top: 40px;
+    font-size: 16px;
+    line-height: 40px;
+}
+.cnt05 .image{
+    height: 320px;
+}
+.cnt05 article>.texts{
+    font-size: 25px;
+    line-height: 40px;
+    bottom: 10px;
+}
+.cnt05 article>.image{
+    height: 320px;
+    margin-top: 80px;
+}
+.cnt05 article>.image::before{
+    top: 40px;
+    font-size: 16px;
+    line-height: 40px;
+}
+.cnt05 article .btns>.btn{
+    height: 60px;
+}
+.cnt05>.btn{
+    font-size: 18px;
+    line-height: 80px;
+    width: calc(100% / 4 * 1.5);
+}
+.cnt05 article:nth-child(1) .btns{
+    font-size: 30px;
+}
+.lightBoxWrap>.btn{
+    font-size: 30px;
+}
+.cnt03 .lightBox{
+    width: 90%;
+}
+.cnt03 .lightBox > .box{
+    width: 100%;
+    margin: 80px auto 0px;
+    padding-bottom: 60px;
+}
+.cnt03 .boxTop > .btn{
+    font-size: 30px;
+    line-height: 30px;
+    top: 20px;
+    padding-top: 20px;
+}
+.cnt03 .lightBox .bars{
+    height: 15px;
+    margin: 20px auto 0;
+    outline: rgb(229, 152, 176) solid 2px;
+}
+.cnt03 .lightBox .bar{
+    height: 15px;
+}
+.cnt03 .bars>.image{
+    width: calc(100% / 4 * 0.8);
+    height: 35px;
+    top: -10px;
+}
+.cnt03 .box .texts{
+    margin-top: 20px;
+}
+.cnt03 .box .texts > h5{
+    font-size: 14px;
+    line-height: 25px;
+    width: calc(100% / 4 * 0.7);
+}
+.cnt03 .box .texts > h3{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.cnt03 .boxBtm > .image{
+    width: calc(100% / 4 * 2);
+    height: 120px;
+}
+.cnt03 .boxBtm .btns>.btn{
+    width: calc(100% / 4 * 3);
+    padding: 10px 0px;
+    margin: 10px auto 0;
+    font-size: 11px;
+    line-height: 15px;
+    border: 2px solid #ee9ab1;
+    border-radius: 15px;
+}
+.cnt03 .resultBox{
+    width: 100%;
+    margin: 80px auto 0px;
+    padding-bottom: 60px;
+}
+.cnt03 .resultBox > .btn{
+    font-size: 30px;
+    line-height: 30px;
+    top: 20px;
+    padding-top: 20px;
+}
+.cnt03 .resultBox > .box{
+    min-height: 390px;
+}
+.cnt03 .resultTop > h5{
+    font-size: 16px;
+    line-height: 40px;
+    margin-top: 10px;
+}
+.cnt03 .resultBox .image.i4{
+    height: 240px;
+}
+.cnt03 .resultTop > p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.cnt03 .resultBtm{
+    margin: 40px auto 0;
+    padding: 40px 0px;
+}
+.cnt03 .resultBtm > h3{
+    font-size: 16px;
+}
+.cnt03 .resultBox .image.i5{
+    margin-top: 20px;
+    height: 220px;
+}
+.cnt03 .resultBtm p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.cnt03 .resultBtm p::before{
+    height: 15px;
+    width: 20px;
+}
+.cnt03 .resultBtm .btn{
+    width: calc(50% - 10px);
+    border: 2px solid rgb(238, 154, 177);
+    margin: 20px auto 0;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 10px;
+}
+.cnt05 .lightBoxWrap > .lightBox{
+    width: 90%;
+    max-width: 700px;
+    max-height: 70%;
+    display: block;
+}
+.cnt05 .lightBoxWrap > .lightBox > .btn{
+    font-size: 18px;
+    top: 20px;
+    z-index: 5;
+}
+.cnt05 .lightBox .images{
+    width: 100%;
+    height: 320px;
+}
+.cnt05 .lightBoxWrap .image{
+    height: 320px;
+}
+.cnt05 .lightBoxWrap .btns>.btn{
+    height: 60px;
+}
+.cnt05 .lightBoxWrap .texts{
+    padding: 0px 20px;
+    width: 100%;
+}
+.cnt05 .lightBoxWrap h3{
+    font-size: 12px;
+    line-height: 40px;
+}
+.cnt05 .lightBoxWrap p{
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+}
+.cnt05 .lightBoxWrap .texts>.btn{
+    width: calc(100% / 4 * 2.2);
+    border: 2px solid rgb(231, 200, 232);
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 40px;
+}
+footer{
+    padding-top: 40px;
+}
+footer > .image{
+    width: calc(100% / 4 * 2);
+    height: 200px;
+}
+footer > .texts{
+    width: calc(100% / 4 * 2);
+    margin-top: 120px;
+    font-size: 10px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+footer>.texts .sns{
+    width: calc(100% / 2 * 1.5);
+}
+footer>.texts .sns>.icon{
+    height: 30px;
+}
+footer>.texts>.infoBtm{
+    margin-top: 0;
+}
+footer .infoBtm>ul:nth-child(1){
+    display: none;
+}
+footer .infoBtm>ul>li:nth-child(2){
+    display: none;
+}
+footer>.texts ul>li::after{
+    display: none;
+}
+footer .infoBtm>.info{
+    display: none;
+}
+.top{
+    height: 60px;
+}
+
+
