@@ -757,9 +757,9 @@ main>.btn:hover{
 }
 
 /* 컨텐츠4 */
-.cntWrap:nth-last-child(4){
+.cntWrap:nth-last-child(3){
     background-color: #e7c8e8;
-    /* margin-top: min(2rem,80px); */
+    margin-top: min(2rem,80px);
 }
 .cnt04>header>h2{
     color: #fff;
@@ -825,10 +825,9 @@ main>.btn:hover{
     margin-left: auto;
 }
 /* 컨텐츠5 */
-.cntWrap:nth-last-child(3){
+.cntWrap:nth-last-child(2){
     background-color: #e7c8e8;
     padding-bottom: min(2rem,80px);
-    background-image: url();
 }
 .cnt05 header>h2{
     color: #fff;
